@@ -5,7 +5,7 @@ class SimpleLinkedList<T>() {
     private var tail: Node<T>? = null
     var length: Int = 0
 
-    private class Node<T> internal constructor(var prev: Node<T>?, var item: T, var next: Node<T>?)
+    private class Node<T> constructor(var prev: Node<T>?, var item: T, var next: Node<T>?)
 
     fun add(element: T) {
         if (length == 0) {
@@ -61,9 +61,18 @@ class SimpleLinkedList<T>() {
             traverse = traverse?.prev
             i--
         }
+//      for singly linked list
+//        var first = head
+//        var second = first?.next
+//        while (second?.next != null) {
+//            val temp = second.next
+//            first = second
+//            second = temp
+//        }
     }
 
 }
+
 
 fun main() {
     val linked = SimpleLinkedList<String>()

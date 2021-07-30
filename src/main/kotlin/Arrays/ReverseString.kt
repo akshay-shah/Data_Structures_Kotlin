@@ -1,7 +1,7 @@
 package Arrays
 
 fun reverseString(string: String) {
-    for (i in string.length-1 downTo  0) {
+    for (i in string.length - 1 downTo 0) {
         print(string[i])
     }
 }
