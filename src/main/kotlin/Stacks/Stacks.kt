@@ -1,13 +1,13 @@
 package Stacks
 
 class SimpleStack<K> {
-    private var top: Node<K>? = null
-    private var bottom: Node<K>? = null
-    private var size = 0
+    private var top: Node<K?>? = null
+    private var bottom: Node<K?>? = null
+    var size = 0
 
     private class Node<K>(var value: K, var next: Node<K>?)
 
-    fun push(value: K) {
+    fun push(value: K?) {
         val node = Node(value, null)
         if (bottom == null) {
             top = node
