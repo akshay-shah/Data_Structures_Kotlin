@@ -1,5 +1,6 @@
 package LinkedList
 
+
 class SimpleLinkedList<T>() {
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
