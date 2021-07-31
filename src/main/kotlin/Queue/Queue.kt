@@ -21,7 +21,7 @@ class SimpleQueue<K> {
     }
 
     fun dequeue(): K? {
-        if (last == null) {
+        if (first == null) {
             return null
         }
         val pointer = first
@@ -44,9 +44,9 @@ fun main() {
     queue.enqueue("Akshay")
     queue.enqueue("Varun")
     queue.enqueue("Ashish")
+    println(queue.dequeue())
+    println(queue.dequeue())
+    println(queue.dequeue())
     println(queue.peek())
-    queue.dequeue()
-    queue.dequeue()
-    queue.dequeue()
 
 }
