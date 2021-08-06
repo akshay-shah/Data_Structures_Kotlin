@@ -43,19 +43,6 @@ class SimpleBinarySearchTree {
             }
         }
         return false
-//            while (true) {
-//                if (value == current!!.value) {
-//                    return true
-//                } else if (value < current.value && current.left != null) {
-//                    current = current.left
-//                    continue
-//                } else if (value > current.value && current.right != null) {
-//                    current = current.right
-//                    continue
-//                } else {
-//                    return false
-//                }
-//            }
     }
 }
 
